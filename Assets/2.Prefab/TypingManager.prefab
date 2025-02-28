@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2469484576061359715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6409142587871744043}
+  - component: {fileID: 601418922465457828}
+  m_Layer: 0
+  m_Name: TypingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6409142587871744043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2469484576061359715}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 959.9917, y: 529.96, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &601418922465457828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2469484576061359715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 127cd4fc49ed6064c8318c52b6ac438b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 0}
+  textsToType:
+  - 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+  - 22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+  - 233333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+  spriteToChange: {fileID: 0}
+  sprites:
+  - {fileID: 6732062350558528555, guid: 144776264b406a548afffc3f742991b9, type: 3}
+  - {fileID: -942905748608181876, guid: a719200d73704f94d88059c2da0eca80, type: 3}
+  - {fileID: 4293476813610713177, guid: ddabcf28bbe2ef44fbbe972bbb53a165, type: 3}
