@@ -40,16 +40,16 @@ namespace IdleGame
             if (gameObject.layer == LayerMask.NameToLayer("Skill")) return; // "SkillLayer" 레이어는 제외
 
             Transform closestEnemy = FindClosestEnemy();
-            Transform experience = FindClosestExperience();
+            // Transform experience = FindClosestExperience();
 
             if (closestEnemy != null)
             {
                 agent.SetDestination(closestEnemy.position);
             }
-            else if (experience != null)
-            {
-                agent.SetDestination(experience.position);
-            }
+            // else if (experience != null)
+            // {
+            //     agent.SetDestination(experience.position);
+            // }
 
             agent.speed = speed;
 
@@ -125,24 +125,24 @@ namespace IdleGame
             return closest;
         }
 
-        // 가장 가까운 경험치 찾기
-        Transform FindClosestExperience()
-        {
-            GameObject[] experiences = GameObject.FindGameObjectsWithTag("Experience");
-            Transform closest = null;
-            float minDistance = float.MaxValue;
+        // // 가장 가까운 경험치 찾기
+        // Transform FindClosestExperience()
+        // {
+        //     GameObject[] experiences = GameObject.FindGameObjectsWithTag("Experience");
+        //     Transform closest = null;
+        //     float minDistance = float.MaxValue;
 
-            foreach (GameObject exp in experiences)
-            {
-                float distance = Vector2.Distance(transform.position, exp.transform.position);
-                if (distance < minDistance)
-                {
-                    minDistance = distance;
-                    closest = exp.transform;
-                }
-            }
+        //     foreach (GameObject exp in experiences)
+        //     {
+        //         float distance = Vector2.Distance(transform.position, exp.transform.position);
+        //         if (distance < minDistance)
+        //         {
+        //             minDistance = distance;
+        //             closest = exp.transform;
+        //         }
+        //     }
 
-            return closest;
-        }
+        //     return closest;
+        // }
     }
 }
